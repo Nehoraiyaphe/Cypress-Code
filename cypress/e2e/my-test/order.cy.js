@@ -1,10 +1,8 @@
 /// <reference types="cypress" />
 
-describe("login Successfully", () => {
-  beforeEach(() => {
-    cy.visit("https://www.saucedemo.com/v1/inventory.html");
-  });
+describe("login And Order products Successfully", () => {
   it("Order products", () => {
+    cy.visit("https://www.saucedemo.com/v1/inventory.html");
     cy.get(".btn_primary").first().click();
     cy.get(".btn_primary").first().click();
     cy.get(".btn_primary").first().click();

@@ -1,11 +1,8 @@
 /// <reference types="cypress" />
 
-describe("login Successfully", () => {
-  beforeEach(() => {
+describe("login Successfully and Cancel from cart", () => {
+  it("Antre From Name product And Cancel from cart", () => {
     cy.visit("https://www.saucedemo.com/v1/inventory.html");
-  });
-
-  it("Cancel from cart", () => {
     cy.get(".btn_primary").first().click();
     cy.get(".inventory_item_name").first().click();
     cy.url("https://www.saucedemo.com/v1/inventory-item.html?id=4").should(

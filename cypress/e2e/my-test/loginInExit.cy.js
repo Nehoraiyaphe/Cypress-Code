@@ -1,11 +1,9 @@
 /// <reference types="cypress" />
 
-describe("login Successfully", () => {
-  beforeEach(() => {
+describe("login Successfully And Exit ", () => {
+  it("Login In Exit ", () => {
     cy.visit("https://www.saucedemo.com/v1/index.html");
-  });
 
-  it("Login with an incorrect username ", () => {
     cy.findByPlaceholderText("Username").type("standard_user");
     cy.findByPlaceholderText("Password").type("secret_sauce");
     cy.get(".btn_action").click();

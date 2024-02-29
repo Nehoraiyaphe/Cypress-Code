@@ -1,5 +1,5 @@
-describe("delete From Cart", () => {
-  it("delete From Cart", () => {
+describe("delete From Cart  ", () => {
+  it("delete From Cart And check The Cart", () => {
     cy.visit("https://www.saucedemo.com/v1/inventory.html");
     cy.get(".btn_primary").first().click();
     cy.get(".btn_primary").first().click();

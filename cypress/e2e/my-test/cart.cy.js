@@ -1,11 +1,8 @@
 /// <reference types="cypress" />
 
-describe("login Successfully", () => {
-  beforeEach(() => {
-    cy.visit("https://www.saucedemo.com/v1/index.html");
-  });
-
+describe("login Successfully And dd to cart ", () => {
   it("Add to cart ", () => {
+    cy.visit("https://www.saucedemo.com/v1/index.html");
     cy.findByPlaceholderText("Username").type("standard_user");
     cy.findByPlaceholderText("Password").type("secret_sauce");
     cy.get(".btn_action").click();
